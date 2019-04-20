@@ -10,7 +10,7 @@ target "com.chrisballinger.CBTunService" do
 end
 
 target :Tether do
-    platform :ios, '7.0'
+    platform :ios, '8.0'
     pod 'ProxyKit', :path => 'Submodules/ProxyKit'
     pod 'AFNetworking', '~> 2.2'
     pod 'UIView+AutoLayout', '~> 1.3'

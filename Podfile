@@ -1,3 +1,5 @@
+use_frameworks!
+
 target :TetherMac do
     platform :osx, '10.9'
     pod 'libplist', '~> 1.11'

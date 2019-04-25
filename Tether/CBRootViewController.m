@@ -51,6 +51,9 @@
 	// Do any additional setup after loading the view.
     self.refreshTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(refreshTimerDidFire:) userInfo:nil repeats:YES];
     
+    // Keep the device from going to sleep
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+//    [[UIScreen mainScreen] setBrightness:0.1];
 }
 
 - (void) setupBytesReadLabel {
